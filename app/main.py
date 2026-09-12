@@ -24,6 +24,6 @@ app.include_router(player.router)
 app.include_router(auth.router)
 app.include_router(loves.router)
 
-@app.get("/root")
+@app.get("/")
 def root():
     return {"Message": "lmao"}        
