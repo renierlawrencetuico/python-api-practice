@@ -5,7 +5,7 @@ After=network.target
 [Service]
 User=lance
 Group=lance
-WorkingDirectory=/home/lance/app/src/
+WorkingDirectory=/home/lance/projectone/src/
 Environment="PATH=/home/lance/projectone/venv/bin"
 EnvironmentFile=/home/lance/.env
 ExecStart=/home/lance/projectone/venv/bin/gunicorn -w 1 -k uvicorn.workers.UvicornWorker app.main:app --bind 0.0.0.0:8000
